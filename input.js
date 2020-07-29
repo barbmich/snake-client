@@ -15,6 +15,7 @@ const setupInput = function(conn) {
     handleUserInput(key)
   })
 
+  // we assign setupInput argument to a variable so that we can... not sure.
   connection = conn;
 
   function handleUserInput(key) {
