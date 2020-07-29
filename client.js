@@ -3,7 +3,7 @@ const net = require('net');
 const connect = function() {
   // defines connection to server
   const conn = net.createConnection({ 
-    host: 'localhost',
+    host: 'localhost', // 135.23.222.131 <- LHL's server address
     port: 50541
   });
   // interpret incoming data as text
