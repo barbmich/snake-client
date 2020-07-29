@@ -8,7 +8,7 @@ const connect = function() {
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
 
-  conn.on('data', function (message) {
+  conn.on('data', function(message) {
     console.log(message);
   });
 
@@ -19,8 +19,7 @@ const connect = function() {
   });
 
   conn.on('connect', () => {
-    // conn.write('Move: up');
-
+    conn.write('Move: up');
   });
   
   return conn;
