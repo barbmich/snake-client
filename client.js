@@ -12,11 +12,17 @@ const connect = function() {
     console.log(message);
   });
 
-  conn.on('connect', (client) => {
+  conn.on('connect', () => {
     conn.write('Name: MB');
-    console.log('Joined the server');
+    console.log('Joined the server!');
     // client.write('Hello there!');
   });
+
+  conn.on('connect', () => {
+    // conn.write('Move: up');
+
+  });
+  
   return conn;
 }
 
